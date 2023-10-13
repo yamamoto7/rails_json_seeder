@@ -113,7 +113,28 @@ files:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/yamamoto7/rails_json_seeder. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/yamamoto7/rails_json_seeder/blob/main/CODE_OF_CONDUCT.md).
+We're thrilled that you're considering contributing to RailsJsonSeeder! Open source projects like this thrive because of contributors like you. Whether it's bug reports, feature ideas, or direct contributions to the code, all are welcome.
+
+### How to start development
+#### clone repo
+```
+$ git clone git@github.com:yamamoto7/rails_json_seeder.git
+$ cd rails_json_seeder
+```
+
+#### add or edit code
+```
+├─ lib/
+   ├─ rails_json_seeder.rb # entry point
+   └─ rails_json_seeder/
+      └─ seeder.rb # core functions
+```
+
+#### try features
+```
+$ cd test/dummy/
+$ rails db:seed
+```
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
