@@ -1,5 +1,6 @@
 # RailsJsonSeeder
 
+[![Gem Version](https://badge.fury.io/rb/rails_json_seeder.svg)](https://badge.fury.io/rb/rails_json_seeder)  
 RailsJsonSeeder is a gem to easily read JSON seed data for Rails applications and reflect it in the database.
 
 ## Installation
