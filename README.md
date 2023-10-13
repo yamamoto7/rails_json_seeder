@@ -19,13 +19,11 @@ RailsJsonSeeder.load_seeds('db/seed_config.yml')
 
 ### Creating a configuration file
 
-A sample configuration file can be viewed below.
-https://github.com/yamamoto7/rails_json_seeder/blob/main/test/dummy/db/seed_config_sample_1.yml
+A sample configuration file can be viewed [here](https://github.com/yamamoto7/rails_json_seeder/blob/main/test/dummy/db/seed_config_sample_1.yml).
 
 ### Creating JSON files
 
-Sample json data can be viewed below.
-https://github.com/yamamoto7/rails_json_seeder/tree/main/test/dummy/db/seed_json_sample_1
+Sample json data can be viewed [here](https://github.com/yamamoto7/rails_json_seeder/tree/main/test/dummy/db/seed_json_sample_1).
 
 ## Contributions
 🌱 Early Days of Our Project: We'd like to candidly express that RailsJsonSeeder is in its infancy. As with many open-source software (OSS) projects in their early stages, there may be areas that are not yet polished or might require further refinements.
