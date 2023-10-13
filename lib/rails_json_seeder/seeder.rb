@@ -54,7 +54,7 @@ module RailsJsonSeeder
       puts "Could not find file at #{path}"
     rescue JSON::ParserError
       puts "Could not parse JSON in file at #{path}"
-    rescue => e
+    rescue StandardError => e
       puts "An error occurred at #{item}: #{e.message}"
       pp e.backtrace
     end
