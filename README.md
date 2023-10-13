@@ -3,6 +3,7 @@
 RailsJsonSeeder is a gem to easily read JSON seed data for Rails applications and reflect it in the database.
 
 ## Installation
+https://rubygems.org/gems/rails_json_seeder
 
 Install the gem and add to the application's Gemfile by executing:
 ```
