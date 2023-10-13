@@ -18,100 +18,14 @@ RailsJsonSeeder.load_seeds('db/seed_config.yml')
 ```
 
 ### Creating a configuration file
-`seed_config`
-```
-seed_file_base_path: 'db/seed_json/' # default value is db/
-files:
-  'users.json':
-    model: User
-  'categories.json':
-    model: Category
-  'books.json':
-    model: Book
-    dependencies:
-      - class: Category
-  'user_books.json':
-    model: UserBook
-    dependencies:
-      - class: User
-      - class: Book
-```
+
+A sample configuration file can be viewed below.
+https://github.com/yamamoto7/rails_json_seeder/blob/main/test/dummy/db/seed_config_sample_1.yml
 
 ### Creating JSON files
-`user_books.json`
-```
-[
-  {
-    "first_name": "John",
-    "last_name": "Doe"
-  },
-  {
-    "first_name": "Bob",
-    "last_name": "Brown"
-  }
-]
-```
-`categories.json`
-```
-[
-  {
-    "label": "Science Fiction"
-  },
-  {
-    "label": "History"
-  }
-]
-```
-`books.json`
-```
-[
-  {
-    "title": "The Time Traveler's Tale",
-    "description": "An intriguing story of a man who discovers a machine that can transport him through time.",
-    "category": {
-      "label": "Science Fiction"
-    }
-  },
-  {
-    "title": "Stars Beyond Reach",
-    "description": "Set in a distant future, a tale of interstellar exploration and the challenges faced by humanity in the vastness of space.",
-    "category": {
-      "label": "Science Fiction"
-    }
-  },
-  {
-    "title": "Rise and Fall of Empires",
-    "description": "An exhaustive study of the world's greatest empires, their dominance, and eventual decline.",
-    "category": {
-      "label": "History"
-    }
-  }
-]
-```
-`user_books.json`
-```
-[
-  {
-    "book": {
-      "title": "The Time Traveler's Tale"
-    },
-    "user": {
-      "first_name": "John",
-      "last_name": "Doe"
-    }
-  },
-  {
-    "book": {
-      "title": "Rise and Fall of Empires"
-    },
-    "user": {
-      "first_name": "Bob",
-      "last_name": "Brown"
-    }
-  }
-]
-```
 
+Sample json data can be viewed below.
+https://github.com/yamamoto7/rails_json_seeder/tree/main/test/dummy/db/seed_json_sample_1
 
 ## Contributions
 🌱 Early Days of Our Project: We'd like to candidly express that RailsJsonSeeder is in its infancy. As with many open-source software (OSS) projects in their early stages, there may be areas that are not yet polished or might require further refinements.
