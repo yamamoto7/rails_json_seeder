@@ -1,0 +1,15 @@
+seed_file_base_path: 'db/seed_json_sample_1/'
+files:
+  'users.json':
+    model: User
+  'categories.json':
+    model: Category
+  'books.json':
+    model: Book
+    dependencies:
+      - class: Category
+  'user_books.json':
+    model: UserBook
+    dependencies:
+      - class: User
+      - class: Book
