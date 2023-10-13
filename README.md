@@ -10,6 +10,10 @@ Install the gem and add to the application's Gemfile by executing:
 ```
 $ gem install rails_json_seeder
 ```
+or add the following to the Gemfile
+```
+gem 'rails_json_seeder'
+```
 
 ## Quickstart
 ### Setup
