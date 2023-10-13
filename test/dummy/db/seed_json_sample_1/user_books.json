@@ -1,0 +1,20 @@
+[
+  {
+    "book": {
+      "title": "The Time Traveler's Tale"
+    },
+    "user": {
+      "first_name": "John",
+      "last_name": "Doe"
+    }
+  },
+  {
+    "book": {
+      "title": "Rise and Fall of Empires"
+    },
+    "user": {
+      "first_name": "Bob",
+      "last_name": "Brown"
+    }
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "The Time Traveler's Tale",
+    "description": "An intriguing story of a man who discovers a machine that can transport him through time.",
+    "category": {
+      "label": "Science Fiction"
+    }
+  },
+  {
+    "title": "Stars Beyond Reach",
+    "description": "Set in a distant future, a tale of interstellar exploration and the challenges faced by humanity in the vastness of space.",
+    "category": {
+      "label": "Science Fiction"
+    }
+  },
+  {
+    "title": "Rise and Fall of Empires",
+    "description": "An exhaustive study of the world's greatest empires, their dominance, and eventual decline.",
+    "category": {
+      "label": "History"
+    }
+  }
+]
