@@ -6,31 +6,22 @@
 RailsJsonSeeder is a gem to easily read JSON seed data for Rails applications and reflect it in the database.
 
 ## Installation
-https://rubygems.org/gems/rails_json_seeder
+Add this gem to your Gemfile.
 
-Install the gem and add to the application's Gemfile by executing:
-```
-$ gem install rails_json_seeder
-```
-or add the following to the Gemfile
 ```
 gem 'rails_json_seeder'
 ```
 
-## Quickstart
-### Setup
-First, call RailsJsonSeeder in the seed.rb file as follows:
+After adding this gem, please execute the following commands.
 ```
-RailsJsonSeeder.load_seeds('db/seed_config.yml')
+$ bundle install
 ```
 
-### Creating a configuration file
+### Example of using RailsJsonSeeder with Seed data
 
-A sample configuration file can be viewed [here](https://github.com/yamamoto7/rails_json_seeder/blob/main/test/dummy/db/seed_config_sample_1.yml).
-
-### Creating JSON files
-
-Sample json data can be viewed [here](https://github.com/yamamoto7/rails_json_seeder/tree/main/test/dummy/db/seed_json_sample_1).
+1. [Example of seed.rb](https://github.com/yamamoto7/rails_json_seeder/blob/main/test/dummy/db/seeds.rb)
+2. [Example of configuration file](https://github.com/yamamoto7/rails_json_seeder/blob/main/test/dummy/db/seed_config_sample_1.yml)
+3. [Example of json file](https://github.com/yamamoto7/rails_json_seeder/tree/main/test/dummy/db/seed_json_sample_1)
 
 ## Contributions
 🌱 Early Days of Our Project: We'd like to candidly express that RailsJsonSeeder is in its infancy. As with many open-source software (OSS) projects in their early stages, there may be areas that are not yet polished or might require further refinements.
@@ -42,33 +33,14 @@ Sample json data can be viewed [here](https://github.com/yamamoto7/rails_json_se
 2. Suggesting Enhancements: Have ideas on how we can do better? Propose enhancements or new features. We're all ears!
 3. Code Contributions: Directly contribute to the codebase following the previously mentioned contribution steps. If you're uncertain about something, feel free to ask.
 4. Documentation & Examples: Found a typo? Think a section of our documentation could be clearer? Your feedback can make our documentation more user-friendly.
-5. Spreading the Word: The more people know about our project, the better. Share our project, write about it, or even give us a shoutout.
+5. Newbies: Not sure how to send a PR? Want to discuss implementation? Please feel free to ask questions on the [issue](https://github.com/yamamoto7/rails_json_seeder/issues).
+
+When you are ready, please click [here](https://github.com/yamamoto7/rails_json_seeder/blob/main/CONTRIBUTING.md) to review the development process.
 
 ### An Invitation to All:
 This is a space of collaboration, learning, and growth. We're committed to fostering a welcoming and inclusive environment for everyone. If you ever have questions, feedback, or suggestions, please don't hesitate to reach out.
 
 Together, let's make RailsJsonSeeder a valuable tool for the Rails community!
-
-### How to start development
-#### clone repo
-```
-$ git clone git@github.com:yamamoto7/rails_json_seeder.git
-$ cd rails_json_seeder
-```
-
-#### add or edit code
-```
-├─ lib/
-   ├─ rails_json_seeder.rb # entry point
-   └─ rails_json_seeder/
-      └─ seeder.rb # core functions
-```
-
-#### try features
-```
-$ cd test/dummy/
-$ rails db:seed
-```
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
