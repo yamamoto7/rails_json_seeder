@@ -7,8 +7,6 @@ Json形式で定義されたシードデータを簡単に取り込むことが�
 
 ## クイックスタート
 ### Install
-https://rubygems.org/gems/rails_json_seeder
-
 Gemfileに本gemを追加してください。
 ```
 gem 'rails_json_seeder'
