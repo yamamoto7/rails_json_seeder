@@ -1,8 +1,3 @@
-PATH
-  remote: ../..
-  specs:
-    rails_json_seeder (0.1.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -168,6 +163,7 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
+    rails_json_seeder (0.1.1)
     railties (7.1.1)
       actionpack (= 7.1.1)
       activesupport (= 7.1.1)
@@ -222,7 +218,7 @@ DEPENDENCIES
   jbuilder
   puma (>= 5.0)
   rails (~> 7.1.0)
-  rails_json_seeder!
+  rails_json_seeder
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
