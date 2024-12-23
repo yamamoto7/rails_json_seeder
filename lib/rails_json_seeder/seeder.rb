@@ -73,6 +73,9 @@ module RailsJsonSeeder
         dependency_class = resolve_constant(dependency[:class])
         foreign_key = dependency[:id] || "#{dependency_class.name.underscore}_id"
         original_field_name = dependency[:alias] || dependency_class.name.underscore
+
+        next unless record[original_field_name]
+
         dependent_record = dependency_class.find_by!(record[original_field_name])
         record[foreign_key] = dependent_record.id
         record.delete(original_field_name)
