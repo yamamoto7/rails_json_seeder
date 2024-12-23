@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'active_record'
 require 'rails'
 require 'active_support/core_ext/hash/keys'
@@ -36,7 +38,7 @@ module RailsJsonSeeder
       end
     end
 
-    def process_file(path, item)
+    def process_file(path, item) # rubocop:disable Metrics/AbcSize
       klass = resolve_constant(item[:model])
 
       dependencies = item[:dependencies] || {}
@@ -73,6 +75,9 @@ module RailsJsonSeeder
         dependency_class = resolve_constant(dependency[:class])
         foreign_key = dependency[:id] || "#{dependency_class.name.underscore}_id"
         original_field_name = dependency[:alias] || dependency_class.name.underscore
+
+        next unless record[original_field_name]
+
         dependent_record = dependency_class.find_by!(record[original_field_name])
         record[foreign_key] = dependent_record.id
         record.delete(original_field_name)
