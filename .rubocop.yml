@@ -18,3 +18,5 @@ Metrics/MethodLength:
 Metrics/ModuleLength:
   Max: 150
 
+Metrics/BlockLength:
+  Max: 40

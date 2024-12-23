@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'active_record'
 require 'rails'
 require 'active_support/core_ext/hash/keys'
@@ -36,7 +38,7 @@ module RailsJsonSeeder
       end
     end
 
-    def process_file(path, item)
+    def process_file(path, item) # rubocop:disable Metrics/AbcSize
       klass = resolve_constant(item[:model])
 
       dependencies = item[:dependencies] || {}
